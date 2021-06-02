@@ -17,3 +17,8 @@
 .jobsSection {
   background: var(--cards-section-bg-color);
 }
+
+.jobsSection__cardsContainer {
+  display: inline-block;
+  text-align: center;
+}

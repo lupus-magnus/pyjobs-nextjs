@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import JobCard from "../components/JobCard";
 import Footer from "../components/Footer";
 import styles from "../styles/modules/Home.module.css";
 
@@ -45,7 +46,7 @@ export default function Home() {
           <h3 className="section__title--small">
             PESQUISE AQUI A VAGA QUE MELHOR SE ENQUADRE AO SEU PERFIL
           </h3>
-          <p>Teste!</p>
+
           <button
             className={`section__button ${styles["searchJobsSection__button"]}`}
           >
@@ -60,6 +61,14 @@ export default function Home() {
             sua vaga destacada na comunidade, entre em contato conosco e
             encontre aqui o profissional ideal para seu time!
           </p>
+          <div className={`container ${styles["jobsSection__cardsContainer"]}`}>
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+          </div>
         </div>
       </section>
       <section className="container">
