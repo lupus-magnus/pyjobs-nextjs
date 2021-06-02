@@ -75,19 +75,19 @@
   width: 3rem;
   height: 3rem;
 
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-content: center;
   justify-content: space-around;
+  display: none;
 }
 
 .menu__burger--icon div {
-  height: 0.4rem;
+  height: 0.3rem;
   border-radius: 0.2rem;
   width: 100%;
   background: var(--main-color);
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
-  display: none;
 }
 
 /*Responsivo:  */
@@ -96,7 +96,7 @@
     display: none;
   }
 
-  .menu__burger--icon div {
-    display: block;
+  .menu__burger--icon {
+    display: flex;
   }
 }

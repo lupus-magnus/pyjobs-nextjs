@@ -1,0 +1,19 @@
+.createJobSection {
+  min-height: 100vh;
+}
+
+.searchJobsSection {
+  flex-direction: column;
+  box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.15);
+  background: var(--main-background-color);
+}
+
+.searchJobsSection__button {
+  width: auto;
+  padding: 0.8rem 5rem;
+  background: var(--main-color);
+}
+
+.jobsSection {
+  background: var(--cards-section-bg-color);
+}

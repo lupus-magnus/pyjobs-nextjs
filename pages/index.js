@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
-//import styles from "../styles/modules/Home.module.css";
+import Footer from "../components/Footer";
+import styles from "../styles/modules/Home.module.css";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
 
       <Navbar />
 
-      <section className="container">
+      <section className={`container ${styles["createJobSection"]} `}>
         <div className="infoBlock">
           <h2 className="section__title">
             Encontre aqui as melhores vagas e profissionais Python{" "}
@@ -38,6 +39,53 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <section className={`${styles["jobsSection"]}`}>
+        <div className={`container ${styles["searchJobsSection"]}`}>
+          <h3 className="section__title--small">
+            PESQUISE AQUI A VAGA QUE MELHOR SE ENQUADRE AO SEU PERFIL
+          </h3>
+          <p>Teste!</p>
+          <button
+            className={`section__button ${styles["searchJobsSection__button"]}`}
+          >
+            Buscar
+          </button>
+        </div>
+        <div className={`container infoBlock`}>
+          <h2 className="section__title">Nossas vagas</h2>
+          <p className="section__text">
+            Aqui você tem acesso a nossas vagas mais recentes para se cadidatar!
+            Se você é uma empresa e quer encontrar os melhores Pythonistas e ter
+            sua vaga destacada na comunidade, entre em contato conosco e
+            encontre aqui o profissional ideal para seu time!
+          </p>
+        </div>
+      </section>
+      <section className="container">
+        <div className="infoBlock">
+          <h2 className="section__title">
+            Conheça as melhores oportunidades Python{" "}
+          </h2>
+          <p className="section__text">
+            Todas as oportunidades listadas no PyJobs passaram por um processo
+            de curadoria para garantir a melhor qualidade possível das vagas.
+            Nossa parceria com as empresas é feita de maneira transparente e
+            visando melhores oportunidades e condições aos desenvolvedores.{" "}
+          </p>
+          <button className="section__button">Quero ver as vagas</button>
+        </div>
+        <div className="section__img">
+          <Image
+            width={833}
+            height={814}
+            src={"/assets/images/joinha.png"}
+            alt="Foto de desenvolvedor de costas programando"
+          />
+        </div>
+      </section>
+
+      <Footer />
     </>
   );
 }

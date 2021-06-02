@@ -18,7 +18,7 @@
   --top-breadcrumb-color: #000;
   --invalid-feedback: #dc3545;
   --active-pagination-bg-color: rgb(29, 184, 223);
-
+  --footer-color: #212529;
   /*Tipografia*/
   --font-family-monospace: "SFMono-Regular", "Menlo", "Monaco", "Consolas",
     "Liberation Mono", "Courier New", monospace;
