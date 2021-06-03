@@ -22,3 +22,50 @@
   display: inline-block;
   text-align: center;
 }
+.form__container {
+  width: 80vw;
+}
+.jobSearch__form {
+  display: grid;
+  min-height: 100%;
+  gap: 3rem 2rem;
+  margin: 4rem 0;
+  grid-template-columns: 1fr 1fr 1 fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "field_00 field_01 field_02"
+    "field_10 field_11 field_12";
+}
+
+.form__fieldArea {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.field_00 {
+  grid-area: field_00;
+}
+.field_01 {
+  grid-area: field_01;
+}
+.field_02 {
+  grid-area: field_02;
+}
+.field_10 {
+  grid-area: field_10;
+}
+.field_11 {
+  grid-area: field_11;
+}
+.field_12 {
+  grid-area: field_12;
+}
+
+/*Responsive:  */
+@media (max-width: 800px) {
+  .jobSearch__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

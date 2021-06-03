@@ -16,20 +16,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <StyledSelect id="teste" name="teste">
-          <option value="unknown" selected="">
-            {" "}
-            Opção de teste{" "}
-          </option>
-        </StyledSelect>
-      </div>
+
       <section className={`container ${styles["createJobSection"]} `}>
         <div className="infoBlock">
           <h2 className="section__title">
@@ -60,7 +47,95 @@ export default function Home() {
           <h3 className="section__title--small">
             PESQUISE AQUI A VAGA QUE MELHOR SE ENQUADRE AO SEU PERFIL
           </h3>
-
+          <div className={styles["form__container"]}>
+            <form className={styles["jobSearch__form"]}>
+              <div
+                className={`${styles["field_00"]}  ${styles["form__fieldArea"]}`}
+              >
+                <StyledSelect
+                  width="100%"
+                  label="Título da Vaga"
+                  id="teste"
+                  name="teste"
+                >
+                  <option value="unknown" selected="">
+                    {" "}
+                    Opção de teste{" "}
+                  </option>
+                </StyledSelect>
+              </div>
+              <div
+                className={`${styles["field_01"]}  ${styles["form__fieldArea"]}`}
+              >
+                <StyledSelect width="100%" label="País" id="teste" name="teste">
+                  <option value="unknown" selected="">
+                    {" "}
+                    Opção de teste{" "}
+                  </option>
+                </StyledSelect>
+              </div>
+              <div
+                className={`${styles["field_02"]}  ${styles["form__fieldArea"]}`}
+              >
+                <StyledSelect
+                  width="100%"
+                  label="Forma de contratação"
+                  id="teste"
+                  name="teste"
+                >
+                  <option value="unknown" selected="">
+                    {" "}
+                    Opção de teste{" "}
+                  </option>
+                </StyledSelect>
+              </div>
+              <div
+                className={`${styles["field_10"]}  ${styles["form__fieldArea"]}`}
+              >
+                <StyledSelect
+                  width="100%"
+                  label="Remoto?"
+                  id="teste"
+                  name="teste"
+                >
+                  <option value="unknown" selected="">
+                    {" "}
+                    Opção de teste{" "}
+                  </option>
+                </StyledSelect>
+              </div>
+              <div
+                className={`${styles["field_11"]}  ${styles["form__fieldArea"]}`}
+              >
+                <StyledSelect
+                  width="100%"
+                  label="Faixa salarial"
+                  id="teste"
+                  name="teste"
+                >
+                  <option value="unknown" selected="">
+                    {" "}
+                    Opção de teste{" "}
+                  </option>
+                </StyledSelect>
+              </div>
+              <div
+                className={`${styles["field_12"]}  ${styles["form__fieldArea"]}`}
+              >
+                <StyledSelect
+                  width="100%"
+                  label="Nível do profissional"
+                  id="teste"
+                  name="teste"
+                >
+                  <option value="unknown" selected="">
+                    {" "}
+                    Opção de teste{" "}
+                  </option>
+                </StyledSelect>
+              </div>
+            </form>
+          </div>
           <button
             className={`section__button ${styles["searchJobsSection__button"]}`}
           >
