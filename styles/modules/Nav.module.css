@@ -22,6 +22,8 @@
 
 .navbar__select--option {
   font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
 }
 
 .navbar__menu {

@@ -23,10 +23,10 @@ export default function Navbar() {
               strong="true"
             >
               <option className={styles["navbar__select--option"]} value="pt">
-                🇧🇷 pt-br
+                🇧🇷 PT-BR
               </option>
               <option className={styles["navbar__select--option"]} value="en">
-                🇺🇸 en
+                🇺🇸 EN
               </option>
             </StyledSelect>
           </li>
