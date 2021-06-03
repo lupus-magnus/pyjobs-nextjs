@@ -20,6 +20,10 @@
   max-height: 90%;
 }
 
+.navbar__select--option {
+  font-size: 2rem;
+}
+
 .navbar__menu {
   /* border: 1px solid red; */
   list-style-type: none;

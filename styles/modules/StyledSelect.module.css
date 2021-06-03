@@ -1,0 +1,43 @@
+.styledSelect--container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -moz-box-shadow: inset 0 0 5px var(--shadow-color);
+  -webkit-box-shadow: inset 0 0 5px var(--shadow-color);
+  box-shadow: inset 0 0 5px var(--shadow-color);
+  position: relative;
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+
+.styledSelect--container::after {
+  position: absolute;
+  top: 1%;
+  right: 0rem;
+  z-index: 98;
+
+  content: "\f078";
+  font-family: FontAwesome;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+
+  background-color: var(--main-color);
+  color: var(--main-background-color);
+  min-width: 2rem;
+  width: 15%;
+  height: 100%;
+}
+
+.styledSelect {
+  padding: 0 1rem;
+  width: 100%;
+  border: 0;
+  position: relative;
+  z-index: 50;
+  background: none;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}

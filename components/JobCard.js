@@ -23,14 +23,14 @@ export default function JobCard() {
           </li>
         </ul>
         <div>
-          <span className={`${styles["job__tags"]}`}>Tags</span>
-          <span className={`${styles["job__tags"]}`}>Tags</span>
-          <span className={`${styles["job__tags"]}`}>Tags</span>
-          <span className={`${styles["job__tags"]}`}>Tags</span>
-          <span className={`${styles["job__tags"]}`}>Tags</span>
-          <span className={`${styles["job__tags"]}`}>Tags</span>
+          <span className={`${styles["job__badges"]}`}>badges</span>
+          <span className={`${styles["job__badges"]}`}>badges</span>
+          <span className={`${styles["job__badges"]}`}>badges</span>
+          <span className={`${styles["job__badges"]}`}>badges</span>
+          <span className={`${styles["job__badges"]}`}>badges</span>
+          <span className={`${styles["job__badges"]}`}>badges</span>
 
-          <span className={`${styles["job__tags"]}`}>Tags</span>
+          <span className={`${styles["job__badges"]}`}>badges</span>
         </div>
         <button
           className={`section__button ${styles["jobcard__info--button"]}`}

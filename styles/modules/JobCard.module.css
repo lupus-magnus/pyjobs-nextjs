@@ -5,6 +5,14 @@
   height: 450px;
   box-shadow: 0 0rem 1.8rem rgba(0, 0, 0, 0.45);
   border-radius: 1rem;
+  background: var(--main-background-color);
+  border-top: 0.8rem solid var(--main-background-color);
+  transition: 0.3s;
+}
+.jobcard:hover {
+  border-top: 0.8rem solid var(--main-color);
+  box-shadow: 0 0rem 3.6rem rgba(0, 0, 0, 0.45);
+  transform: scale(1.05);
 }
 
 .jobcard__info {
@@ -46,12 +54,12 @@
   list-style-type: none;
 }
 
-.job__tags {
-  background: #555;
+.job__badges {
+  background: var(--badge-bg-color);
   padding: 0.25rem 0.4rem;
   border-radius: 0.3rem;
   display: inline-block;
-  margin: 0 0.25rem;
+  margin: 0.1rem 0.25rem;
   color: white;
   font-weight: 700;
   text-decoration: underline;

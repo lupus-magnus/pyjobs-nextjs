@@ -1,5 +1,6 @@
 import styles from "../styles/modules/Nav.module.css";
 import Image from "next/image";
+import StyledSelect from "../components/StyledSelect";
 
 export default function Navbar() {
   return (
@@ -15,10 +16,18 @@ export default function Navbar() {
         </div>
         <div className={styles["navbar__menu"]}>
           <li>
-            <select id="language" name="language">
-              <option value="pt">Português {"(pt-br)"}</option>
-              <option value="en">English {"(en)"}</option>
-            </select>
+            <StyledSelect
+              fontSize="1.3rem"
+              id="language_option"
+              name="language"
+            >
+              <option className={styles["navbar__select--option"]} value="pt">
+                🇧🇷 pt-br
+              </option>
+              <option className={styles["navbar__select--option"]} value="en">
+                🇺🇸 en
+              </option>
+            </StyledSelect>
           </li>
           <li className={styles["--responsive"]}>Vagas</li>
           <li className={styles["--responsive"]}>Blog</li>
