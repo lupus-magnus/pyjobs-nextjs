@@ -20,6 +20,7 @@ export default function Navbar() {
               fontSize="1.3rem"
               id="language_option"
               name="language"
+              strong="true"
             >
               <option className={styles["navbar__select--option"]} value="pt">
                 🇧🇷 pt-br
