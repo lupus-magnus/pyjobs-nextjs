@@ -1,25 +1,28 @@
 import styles from "../styles/modules/JobCard.module.css";
 
-export default function JobCard() {
+export default function JobCard(props) {
+  console.log("Chegou no objeto card:", props.jobObj);
+  const { id, title, company_name, workplace, remote } = props.jobObj;
+
   return (
     <div className={`${styles["jobcard"]}`}>
       <div className={`container ${styles["jobcard__info"]}`}>
-        <h3 className={`${styles["jobcard__info--title"]}`}>Titulo de Card</h3>
+        <h3 className={`${styles["jobcard__info--title"]}`}>{title}</h3>
         <ul className={`container ${styles["job__info"]}`}>
           <li>
-            <strong>Empresa:</strong> FIEC
+            <strong>Empresa:</strong> {company_name}
           </li>
           <li>
-            <strong>Faixa salarial:</strong> 6.000,01 - 10.000,00
+            <strong>Faixa salarial:</strong> * A implementar *
           </li>
           <li>
-            <strong>Local da vaga:</strong> Fortaleza - Ceará
+            <strong>Local da vaga:</strong> {workplace}
           </li>
           <li>
-            <strong>Nível:</strong> Pleno
+            <strong>Nível:</strong> * A implementar *
           </li>
           <li>
-            <strong>Aceita remoto:</strong> Sim
+            <strong>Aceita remoto:</strong> {remote ? "Sim" : "Não"}
           </li>
         </ul>
         <div>

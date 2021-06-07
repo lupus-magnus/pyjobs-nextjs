@@ -9,7 +9,20 @@ import { useState } from "react";
 import Lottie from "react-lottie";
 import animationData from "../public/assets/animations/loading.json";
 
-export default function Home() {
+const path = process.env.PYJOBS_API;
+
+//Fetching external data
+export const getServerSideProps = async () => {
+  const res = await fetch(path); //"https://jsonplaceholder.typicode.com/users");
+  const data = await res.json();
+
+  return {
+    props: { jobs: data.objects.slice(0, 9) },
+  };
+};
+
+export default function Home({ jobs }) {
+  console.log("jobs:", jobs);
   const [isLoading, setIsLoading] = useState(true);
   //Para a animação do Lottie:
   const [animationState, setAnimationState] = useState({
@@ -183,12 +196,9 @@ export default function Home() {
             <div
               className={`container ${styles["jobsSection__cardsContainer"]}`}
             >
-              <JobCard />
-              <JobCard />
-              <JobCard />
-              <JobCard />
-              <JobCard />
-              <JobCard />
+              {jobs.map((job) => {
+                return <JobCard key={job.id} jobObj={job} />;
+              })}
             </div>
           )}
         </div>
