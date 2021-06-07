@@ -13,13 +13,13 @@ export default function JobCard(props) {
             <strong>Empresa:</strong> {company_name}
           </li>
           <li>
-            <strong>Faixa salarial:</strong> * A implementar *
+            <strong>Faixa salarial:</strong> 6.000,01 - 10.000,00
           </li>
           <li>
             <strong>Local da vaga:</strong> {workplace}
           </li>
           <li>
-            <strong>Nível:</strong> * A implementar *
+            <strong>Nível:</strong> Pleno Hiper Master
           </li>
           <li>
             <strong>Aceita remoto:</strong> {remote ? "Sim" : "Não"}
