@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  width: 100vw;
 }
 
 /*Design geral:  */
@@ -53,7 +54,10 @@ body {
   text-align: center;
   line-height: 25px;
 }
-
+.section__img {
+  width: 100%;
+  /* border: 1px solid red; */
+}
 .section__button {
   background: var(--main-color);
   border: none;

@@ -5,8 +5,29 @@ import JobCard from "../components/JobCard";
 import Footer from "../components/Footer";
 import styles from "../styles/modules/Home.module.css";
 import StyledSelect from "../components/StyledSelect";
+import { useState } from "react";
+import Lottie from "react-lottie";
+import animationData from "../public/assets/animations/loading.json";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+  //Para a animação do Lottie:
+  const [animationState, setAnimationState] = useState({
+    isStopped: false,
+    isPaused: false,
+  });
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  setTimeout(() => setIsLoading(false), 5000);
+
   return (
     <>
       <Head>
@@ -150,14 +171,26 @@ export default function Home() {
             sua vaga destacada na comunidade, entre em contato conosco e
             encontre aqui o profissional ideal para seu time!
           </p>
-          <div className={`container ${styles["jobsSection__cardsContainer"]}`}>
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-          </div>
+          {isLoading ? (
+            <Lottie
+              options={defaultOptions}
+              height={400}
+              width={400}
+              isStopped={animationState.isStopped}
+              isPaused={animationState.isPaused}
+            />
+          ) : (
+            <div
+              className={`container ${styles["jobsSection__cardsContainer"]}`}
+            >
+              <JobCard />
+              <JobCard />
+              <JobCard />
+              <JobCard />
+              <JobCard />
+              <JobCard />
+            </div>
+          )}
         </div>
       </section>
       <section className="container">
