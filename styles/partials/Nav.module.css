@@ -49,6 +49,12 @@
 .navbar__menu--mobile {
   display: none;
   transition: 0.3s;
+  list-style-type: none;
+  z-index: 99;
+  box-shadow: 0 3rem 10rem 0 var(--shadow-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
 }
 
 .onScreen {
