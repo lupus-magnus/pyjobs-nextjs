@@ -1,4 +1,4 @@
-import styles from "../styles/modules/StyledSelect.module.css";
+import styles from "../styles/partials/StyledSelect.module.css";
 
 export default function StyledSelect(props) {
   //Das props, apenas id e name são atributos obrigatórios. Pode-se passar também uma width desejada.

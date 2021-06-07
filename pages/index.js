@@ -3,7 +3,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import JobCard from "../components/JobCard";
 import Footer from "../components/Footer";
-import styles from "../styles/modules/Home.module.css";
+import styles from "../styles/pages/Home/Home.module.css";
 import StyledSelect from "../components/StyledSelect";
 import { useState } from "react";
 import Lottie from "react-lottie";

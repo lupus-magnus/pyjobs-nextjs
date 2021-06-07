@@ -1,4 +1,4 @@
-import styles from "../styles/modules/Nav.module.css";
+import styles from "../styles/partials/Nav.module.css";
 import Image from "next/image";
 import StyledSelect from "../components/StyledSelect";
 import React, { useState, useEffect } from "react";

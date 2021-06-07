@@ -1,4 +1,4 @@
-import styles from "../styles/modules/JobCard.module.css";
+import styles from "../styles/partials/JobCard.module.css";
 
 export default function JobCard(props) {
   console.log("Chegou no objeto card:", props.jobObj);
